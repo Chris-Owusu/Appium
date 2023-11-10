@@ -51,7 +51,7 @@ public class AppTest
 			{
 				System.out.println(n+" is an odd number");
 			}
-		}
+		} 
 		
 		
 		// Array List
@@ -79,6 +79,16 @@ public class AppTest
 		System.out.println(iSplittedString[2]);
 		System.out.println(iSplittedString[3]);
 		System.out.println(iSplittedString[4]);
+		
+		// print each element in the string
+		for (int i = 0; i<ss.length(); i++) {
+			System.out.println("Individual characters are "+ss.charAt(i));
+		}
+		
+		// print each element in the string in reverse order
+		for (int j =ss.length()-1; j>=0; j--) {
+			System.out.println("Individual characters in reverse are "+ss.charAt(j));
+		}
 		
 		
 		
