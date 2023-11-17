@@ -17,7 +17,7 @@ import io.appium.java_client.service.local.AppiumServiceBuilder;
 
 public class BaseTest {
 	public AndroidDriver driver;
-	AppiumDriverLocalService service;
+	public AppiumDriverLocalService service;
 	
 	
 	@BeforeClass
