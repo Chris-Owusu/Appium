@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-20T12:35:30 GMT" name="Default suite" finished-at="2023-11-20T12:35:56 GMT" duration-ms="26128">
+  <suite started-at="2023-11-20T14:45:04 GMT" name="Default suite" finished-at="2023-11-20T14:45:25 GMT" duration-ms="20601">
     <groups>
     </groups>
-    <test started-at="2023-11-20T12:35:30 GMT" name="Default test" finished-at="2023-11-20T12:35:56 GMT" duration-ms="26128">
-      <class name="AppiumBasic.DragNDrop">
-        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:AppiumBasic.DragNDrop@1b11171f]" started-at="2023-11-20T12:35:30 GMT" name="ConfigureAppium" finished-at="2023-11-20T12:35:41 GMT" duration-ms="11711" status="PASS">
+    <test started-at="2023-11-20T14:45:04 GMT" name="Default test" finished-at="2023-11-20T14:45:25 GMT" duration-ms="20601">
+      <class name="AppiumBasic.MiscellaneousActivities">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:AppiumBasic.MiscellaneousActivities@1b11171f]" started-at="2023-11-20T14:45:05 GMT" name="ConfigureAppium" finished-at="2023-11-20T14:45:14 GMT" duration-ms="9691" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigureAppium -->
-        <test-method signature="DragDemoTests()[pri:0, instance:AppiumBasic.DragNDrop@1b11171f]" started-at="2023-11-20T12:35:41 GMT" name="DragDemoTests" finished-at="2023-11-20T12:35:55 GMT" duration-ms="13836" status="PASS">
+        <test-method signature="MiscellineousActivity()[pri:0, instance:AppiumBasic.MiscellaneousActivities@1b11171f]" started-at="2023-11-20T14:45:14 GMT" name="MiscellineousActivity" finished-at="2023-11-20T14:45:25 GMT" duration-ms="10261" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DragDemoTests -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:AppiumBasic.DragNDrop@1b11171f]" started-at="2023-11-20T12:35:55 GMT" name="tearDown" finished-at="2023-11-20T12:35:56 GMT" duration-ms="515" status="PASS">
+        </test-method> <!-- MiscellineousActivity -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AppiumBasic.MiscellaneousActivities@1b11171f]" started-at="2023-11-20T14:45:25 GMT" name="tearDown" finished-at="2023-11-20T14:45:25 GMT" duration-ms="566" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- AppiumBasic.DragNDrop -->
+      </class> <!-- AppiumBasic.MiscellaneousActivities -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
