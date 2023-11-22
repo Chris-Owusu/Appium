@@ -35,7 +35,10 @@ public class BaseTest {
 		// Setting up UIAutomator
 		UiAutomator2Options option = new UiAutomator2Options();
 		option.setDeviceName("Pixel 7 Pro");
-		option.setApp("C://eclipseWorkflow//Java//Java//src//test//java//resources//ApiDemos-debug.apk");
+//		option.setApp("C://eclipseWorkflow//Java//Java//src//test//java//resources//ApiDemos-debug.apk");
+		option.setApp("C://eclipseWorkflow//Java//Java//src//test//java//resources//General-Store.apk");
+//		option.setApp("C://eclipseWorkflow//Java//Java//src//test//java//resources//AccessBank.apk");
+//		option.setApp("C://eclipseWorkflow//Java//Java//src//test//java//resources//XLock.apk");
 		
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), option);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -76,6 +79,12 @@ public class BaseTest {
 			    "endX", x,
 			    "endY", y
 			));
+	}
+	
+	// Get formatted amount --> remove $ from the price
+	public Double getFormattedAmount(String amount) {
+		Double fPrice = Double.parseDouble(amount.substring(1));
+		return fPrice;
 	}
 	
 	
