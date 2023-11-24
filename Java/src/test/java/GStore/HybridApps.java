@@ -53,10 +53,10 @@ public class HybridApps extends BaseTest {
 		
 		driver.findElement(By.id("com.androidsample.generalstore:id/appbar_btn_cart")).click();
 		
+		Thread.sleep(3000);
 		WebElement title = driver.findElement(By.id("com.androidsample.generalstore:id/toolbar_title"));
 		System.out.println("The title text is: " + title.getAttribute("text"));
 		
-		Thread.sleep(3000);
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.attributeContains(title, "text", "Cart"));
 
@@ -87,11 +87,14 @@ public class HybridApps extends BaseTest {
 			System.out.println(contextName);
 		}
 		
-		driver.context("");
+		driver.context("WEBVIEW_com.androidsample.generalstore");
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("q")));
 		driver.findElement(By.name("q")).sendKeys("Mangoes");
 		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
+		Thread.sleep(3000);
 		driver.pressKey(new KeyEvent(AndroidKey.BACK));
 		driver.context("NATIVE_APP");
+		Thread.sleep(2000);
 
 		// Hybrid
 		
