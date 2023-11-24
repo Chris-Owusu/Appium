@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="GStore.CheckoutPage">
+      <class name="GStore.LongPress">
         <methods>
           <include name="ConfigureAppium"/>
+          <include name="checkBox"/>
           <include name="tearDown"/>
-          <include name="checkout"/>
         </methods>
-      </class> <!-- GStore.CheckoutPage -->
+      </class> <!-- GStore.LongPress -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

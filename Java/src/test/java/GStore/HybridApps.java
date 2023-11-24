@@ -2,25 +2,33 @@ package GStore;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.google.common.collect.ImmutableMap;
+
 import AppiumBasic.BaseTest;
 import io.appium.java_client.AppiumBy;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
 
-public class CheckoutPage extends BaseTest {
+public class HybridApps extends BaseTest {
 
 	@Test
-	public void checkout() throws InterruptedException {
-		WebElement errMsg = driver.findElement(By.id("android:id/aerr_close"));
-		if (errMsg.isDisplayed() == true) {
-			errMsg.click();
-		}
+	public void checkBox() throws InterruptedException {
+//		WebElement errMsg = driver.findElement(By.id("android:id/aerr_close"));
+//		if (errMsg.isDisplayed() == true) {
+//			errMsg.click();
+//		}
 		WebElement country = driver.findElement(By.id("com.androidsample.generalstore:id/spinnerCountry"));
 		country.click();
 		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Aruba\"));")).click();
@@ -47,7 +55,8 @@ public class CheckoutPage extends BaseTest {
 		
 		WebElement title = driver.findElement(By.id("com.androidsample.generalstore:id/toolbar_title"));
 		System.out.println("The title text is: " + title.getAttribute("text"));
-
+		
+		Thread.sleep(3000);
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.attributeContains(title, "text", "Cart"));
 
@@ -63,18 +72,28 @@ public class CheckoutPage extends BaseTest {
 		String displaySum = driver.findElement(By.id("com.androidsample.generalstore:id/totalAmountLbl")).getText();
 		Double displayFormattedSum =  getFormattedAmount(displaySum);
 		System.out.println("system's total sum: " + displayFormattedSum);
-		
-//		Assert.assertEquals(totalSum, displayFormattedSum);
 		Assert.assertEquals(String.format("%.2f", totalSum), String.format("%.2f", displayFormattedSum));
-
+		 
+		WebElement termsBtn = driver.findElement(By.id("com.androidsample.generalstore:id/termsButton"));
+		LongPress(termsBtn);
+		driver.findElement(By.id("android:id/button1")).click();
+		driver.findElement(AppiumBy.className("android.widget.CheckBox")).click();
+		driver.findElement(By.id("com.androidsample.generalstore:id/btnProceed")).click();
+		Thread.sleep(10000);
 		
-//		List<WebElement> product = driver.findElements(By.className("android.widget.TextView"));
-//		int count = product.size();
-//		for (int i = 0; i < count; i++) {
-//			String productName = driver.findElements(By.id("com.androidsample.generalstore:id/productName")).get(i).getText();
-//			System.out.println(productName);
-//			Thread.sleep(5000);
-//		}
+		// this line of code gets all the different views in the application: Web and Mobile -> driver.getContextHandles();
+		Set<String> context =  driver.getContextHandles();
+		for (String contextName: context) {
+			System.out.println(contextName);
+		}
+		
+		driver.context("");
+		driver.findElement(By.name("q")).sendKeys("Mangoes");
+		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
+		driver.pressKey(new KeyEvent(AndroidKey.BACK));
+		driver.context("NATIVE_APP");
+
+		// Hybrid
 		
 	}
 }
