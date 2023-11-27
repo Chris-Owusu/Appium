@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="GStore.HybridApps">
+      <class name="GStore.CheckoutPage">
         <methods>
           <include name="ConfigureAppium"/>
-          <include name="checkBox"/>
           <include name="tearDown"/>
+          <include name="checkout"/>
         </methods>
-      </class> <!-- GStore.HybridApps -->
+      </class> <!-- GStore.CheckoutPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -17,10 +17,10 @@ public class CheckoutPage extends BaseTest {
 
 	@Test
 	public void checkout() throws InterruptedException {
-		WebElement errMsg = driver.findElement(By.id("android:id/aerr_close"));
-		if (errMsg.isDisplayed() == true) {
-			errMsg.click();
-		}
+//		WebElement errMsg = driver.findElement(By.id("android:id/aerr_close"));
+//		if (errMsg.isDisplayed() == true) {
+//			errMsg.click();
+//		}
 		WebElement country = driver.findElement(By.id("com.androidsample.generalstore:id/spinnerCountry"));
 		country.click();
 		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Aruba\"));")).click();
