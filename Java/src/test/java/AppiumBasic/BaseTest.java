@@ -34,7 +34,8 @@ public class BaseTest {
 		
 		// Setting up UIAutomator
 		UiAutomator2Options option = new UiAutomator2Options();
-		option.setDeviceName("Pixel 7 Pro");
+//		option.setDeviceName("Pixel 7 Pro"); // emulator
+		option.setDeviceName("Android Device");   // When running it on a real device
 		option.setChromedriverExecutable("C://Users//ChristopherOwusuAhen//Downloads//chromedriver.exe");
 //		option.setApp("C://eclipseWorkflow//Java//Java//src//test//java//resources//ApiDemos-debug.apk");
 		option.setApp("C://eclipseWorkflow//Java//Java//src//test//java//resources//General-Store.apk");

@@ -2,52 +2,29 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-27T14:27:27 GMT" name="Default suite" finished-at="2023-11-27T14:28:01 GMT" duration-ms="33991">
+  <suite started-at="2023-11-28T14:04:17 GMT" name="Default suite" finished-at="2023-11-28T14:05:49 GMT" duration-ms="92942">
     <groups>
     </groups>
-    <test started-at="2023-11-27T14:27:27 GMT" name="Default test" finished-at="2023-11-27T14:28:01 GMT" duration-ms="33991">
-      <class name="GStore.CheckoutPage">
-        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:GStore.CheckoutPage@26e356f0]" started-at="2023-11-27T14:27:27 GMT" name="ConfigureAppium" finished-at="2023-11-27T14:27:49 GMT" duration-ms="22215" status="PASS">
+    <test started-at="2023-11-28T14:04:17 GMT" name="Default test" finished-at="2023-11-28T14:05:49 GMT" duration-ms="92942">
+      <class name="GStore.HybridApps">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:GStore.HybridApps@26e356f0]" started-at="2023-11-28T14:04:17 GMT" name="ConfigureAppium" finished-at="2023-11-28T14:05:16 GMT" duration-ms="59884" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigureAppium -->
-        <test-method signature="checkout()[pri:0, instance:GStore.CheckoutPage@26e356f0]" started-at="2023-11-27T14:27:49 GMT" name="checkout" finished-at="2023-11-27T14:27:59 GMT" duration-ms="10107" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="checkBox()[pri:0, instance:GStore.HybridApps@26e356f0]" started-at="2023-11-28T14:05:16 GMT" name="checkBox" finished-at="2023-11-28T14:05:49 GMT" duration-ms="32495" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [1d20e4c3-3159-4fe8-9d64-63fe1113136c, findElement {using=id, value=android:id/aerr_close}]
-Capabilities {appium:app: C://eclipseWorkflow//Java//..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C://Users//ChristopherOwusu..., appium:databaseEnabled: false, appium:desired: {app: C://eclipseWorkflow//Java//..., automationName: UIAutomator2, chromedriverExecutable: C://Users//ChristopherOwusu..., deviceName: Pixel 7 Pro, platformName: ANDROID}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2002, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 1d20e4c3-3159-4fe8-9d64-63fe1113136c]]>
+              <![CDATA[expected [442.94] but found [325.97]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [1d20e4c3-3159-4fe8-9d64-63fe1113136c, findElement {using=id, value=android:id/aerr_close}]
-Capabilities {appium:app: C://eclipseWorkflow//Java//..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C://Users//ChristopherOwusu..., appium:databaseEnabled: false, appium:desired: {app: C://eclipseWorkflow//Java//..., automationName: UIAutomator2, chromedriverExecutable: C://Users//ChristopherOwusu..., deviceName: Pixel 7 Pro, platformName: ANDROID}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2002, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 1d20e4c3-3159-4fe8-9d64-63fe1113136c
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-at GStore.CheckoutPage.checkout(CheckoutPage.java:20)
+              <![CDATA[java.lang.AssertionError: expected [442.94] but found [325.97]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at GStore.HybridApps.checkBox(HybridApps.java:75)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -78,15 +55,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:GStore.CheckoutPage@26e356f0]" started-at="2023-11-27T14:27:59 GMT" name="tearDown" finished-at="2023-11-27T14:28:01 GMT" duration-ms="1592" status="PASS">
+        </test-method> <!-- checkBox -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GStore.HybridApps@26e356f0]" started-at="2023-11-28T14:05:49 GMT" name="tearDown" finished-at="2023-11-28T14:05:49 GMT" duration-ms="514" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- GStore.CheckoutPage -->
+      </class> <!-- GStore.HybridApps -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
