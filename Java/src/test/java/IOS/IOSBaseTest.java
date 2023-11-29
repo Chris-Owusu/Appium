@@ -27,13 +27,13 @@ public class IOSBaseTest {
 		
 		
 		// Setting up XCUITest
-		XCUITest2Options option = new XCUITest2Options();
-		option.setDeviceName("iPhone 12 Pro");
-		option.setApp("C://eclipseWorkflow//Java//Java//src//test//java//resources//General-Store.apk");
-		option.setPlatformVersion("15.5");
-		option.setWdaLaunchTimeout(Duration.ofSeconds(20));
+//		XCUITest2Options option = new XCUITest2Options();
+//		option.setDeviceName("iPhone 12 Pro");
+//		option.setApp("C://eclipseWorkflow//Java//Java//src//test//java//resources//General-Store.apk");
+//		option.setPlatformVersion("15.5");
+//		option.setWdaLaunchTimeout(Duration.ofSeconds(20));
 		
-		driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), option);
+//		driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), option);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 	
