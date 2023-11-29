@@ -2,37 +2,37 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-29T14:26:32 GMT" name="Default suite" finished-at="2023-11-29T14:27:32 GMT" duration-ms="60245">
+  <suite started-at="2023-11-29T16:22:36 GMT" name="Default suite" finished-at="2023-11-29T16:23:42 GMT" duration-ms="66010">
     <groups>
     </groups>
-    <test started-at="2023-11-29T14:26:32 GMT" name="Default test" finished-at="2023-11-29T14:27:32 GMT" duration-ms="60245">
+    <test started-at="2023-11-29T16:22:36 GMT" name="Default test" finished-at="2023-11-29T16:23:42 GMT" duration-ms="66010">
       <class name="org.javaTut.HybridApp">
-        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:org.javaTut.HybridApp@47d9a273]" started-at="2023-11-29T14:26:32 GMT" name="ConfigureAppium" finished-at="2023-11-29T14:26:41 GMT" duration-ms="8957" status="PASS">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:org.javaTut.HybridApp@47d9a273]" started-at="2023-11-29T16:22:36 GMT" name="ConfigureAppium" finished-at="2023-11-29T16:22:46 GMT" duration-ms="9519" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigureAppium -->
-        <test-method signature="checkBox()[pri:0, instance:org.javaTut.HybridApp@47d9a273]" started-at="2023-11-29T14:26:41 GMT" name="checkBox" finished-at="2023-11-29T14:27:31 GMT" duration-ms="50745" status="FAIL">
+        <test-method signature="checkBox()[pri:0, instance:org.javaTut.HybridApp@47d9a273]" started-at="2023-11-29T16:22:46 GMT" name="checkBox" finished-at="2023-11-29T16:23:41 GMT" duration-ms="55270" status="FAIL">
           <exception class="io.appium.java_client.NoSuchContextException">
             <message>
               <![CDATA[An unknown server-side error occurred while processing the command. Original error: No Chromedriver found that can automate Chrome '83.0.4103'. You could also try to enable automated chromedrivers download as a possible workaround.
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [66771bab-3fd0-41a1-afc0-38f0671fbb93, switchToContext {name=WEBVIEW_com.androidsample.generalstore}]
+Command: [0cf44b1b-1b8b-40a5-9829-780e48b7021e, switchToContext {name=WEBVIEW_com.androidsample.generalstore}]
 Capabilities {appium:app: C://eclipseWorkflow//Java//..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C://eclipseWorkflow//Java//..., automationName: UIAutomator2, deviceName: GStore, platformName: ANDROID}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2002, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 66771bab-3fd0-41a1-afc0-38f0671fbb93]]>
+Session ID: 0cf44b1b-1b8b-40a5-9829-780e48b7021e]]>
             </message>
             <full-stacktrace>
               <![CDATA[io.appium.java_client.NoSuchContextException: An unknown server-side error occurred while processing the command. Original error: No Chromedriver found that can automate Chrome '83.0.4103'. You could also try to enable automated chromedrivers download as a possible workaround.
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [66771bab-3fd0-41a1-afc0-38f0671fbb93, switchToContext {name=WEBVIEW_com.androidsample.generalstore}]
+Command: [0cf44b1b-1b8b-40a5-9829-780e48b7021e, switchToContext {name=WEBVIEW_com.androidsample.generalstore}]
 Capabilities {appium:app: C://eclipseWorkflow//Java//..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C://eclipseWorkflow//Java//..., automationName: UIAutomator2, deviceName: GStore, platformName: ANDROID}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2002, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 66771bab-3fd0-41a1-afc0-38f0671fbb93
+Session ID: 0cf44b1b-1b8b-40a5-9829-780e48b7021e
 at io.appium.java_client.remote.SupportsContextSwitching.context(SupportsContextSwitching.java:48)
 at org.javaTut.AppiumFramework.pageObjects.android.ProjectCatalog.webview(ProjectCatalog.java:116)
-at org.javaTut.HybridApp.checkBox(HybridApp.java:50)
+at org.javaTut.HybridApp.checkBox(HybridApp.java:49)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -65,9 +65,9 @@ Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error 
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [66771bab-3fd0-41a1-afc0-38f0671fbb93, switchToContext {name=WEBVIEW_com.androidsample.generalstore}]
+Command: [0cf44b1b-1b8b-40a5-9829-780e48b7021e, switchToContext {name=WEBVIEW_com.androidsample.generalstore}]
 Capabilities {appium:app: C://eclipseWorkflow//Java//..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C://eclipseWorkflow//Java//..., automationName: UIAutomator2, deviceName: GStore, platformName: ANDROID}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2002, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 66771bab-3fd0-41a1-afc0-38f0671fbb93
+Session ID: 0cf44b1b-1b8b-40a5-9829-780e48b7021e
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -89,7 +89,7 @@ at io.appium.java_client.remote.SupportsContextSwitching.context(SupportsContext
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkBox -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.javaTut.HybridApp@47d9a273]" started-at="2023-11-29T14:27:31 GMT" name="tearDown" finished-at="2023-11-29T14:27:32 GMT" duration-ms="470" status="FAIL">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.javaTut.HybridApp@47d9a273]" started-at="2023-11-29T16:23:41 GMT" name="tearDown" finished-at="2023-11-29T16:23:42 GMT" duration-ms="1140" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "io.appium.java_client.service.local.AppiumDriverLocalService.stop()" because "this.service" is null]]>

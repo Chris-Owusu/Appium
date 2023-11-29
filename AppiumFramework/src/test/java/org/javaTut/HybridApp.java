@@ -20,7 +20,7 @@ public class HybridApp extends BaseTests {
 		formPage.setNameField("Marc");
 		formPage.gender("male");
 		formPage.chooseCountry("Aruba");
-		ProjectCatalog projectCatalog = formPage.shopButton();
+		ProjectCatalog projectCatalog = (ProjectCatalog) formPage.shopButton();
 		Thread.sleep(5000);
 		projectCatalog.chooseKicks();
 		projectCatalog.addToCartPage();

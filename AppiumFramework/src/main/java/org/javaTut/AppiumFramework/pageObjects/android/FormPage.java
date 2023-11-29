@@ -59,8 +59,9 @@ public class FormPage extends AndroidActions {
 	@AndroidFindBy(className="android.widget.Button")
 	private WebElement shopBtn;
 	
-	public void shopButton() {
+	public ProjectCatalog shopButton() {
 		shopBtn.click();
+		return new ProjectCatalog(driver);
 	}
 	
 	
