@@ -5,6 +5,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
 
+import org.javaTut.AppiumFramework.pageObjects.android.FormPage;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
@@ -21,26 +22,28 @@ import io.appium.java_client.service.local.AppiumServiceBuilder;
 public class BaseTests {
 	public AndroidDriver driver;
 	public AppiumDriverLocalService service;
+	public FormPage formPage;
 	
 	
 	@BeforeClass
 	public void ConfigureAppium() throws MalformedURLException {
 		
 		// Automatically start service.
-//		service = new AppiumServiceBuilder().withAppiumJS(new File("C://Users//ChristopherOwusuAhen//AppData//Roaming//npm//node_modules//appium//build//lib//main.js"))
-//					.withIPAddress("127.0.0.1").usingPort(4723).build();
-//		service.start();
+		service = new AppiumServiceBuilder().withAppiumJS(new File("C://Users//ChristopherOwusuAhen//AppData//Roaming//npm//node_modules//appium//build//lib//main.js"))
+					.withIPAddress("127.0.0.1").usingPort(4723).build();
+		service.start();
 		
 		
 		// Setting up UIAutomator
 		UiAutomator2Options option = new UiAutomator2Options();
 		option.setDeviceName("GStore"); // emulator
 //		option.setDeviceName("Android Device");   // When running it on a real device
-//		option.setChromedriverExecutable("C://Users//ChristopherOwusuAhen//Downloads//chromedriver.exe");
+		option.setChromedriverExecutable("C://Users//ChristopherOwusuAhen//Downloads//chromedriver.exe");
 		option.setApp("C://eclipseWorkflow//Java//Java//src//test//java//resources//General-Store.apk");
 		
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), option);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		formPage =  new FormPage(driver);
 	}
 	
 	// Long press on web element

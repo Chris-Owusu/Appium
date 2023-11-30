@@ -49,79 +49,10 @@ AndroidDriver driver;
 	@AndroidFindBy(id="com.androidsample.generalstore:id/appbar_btn_cart")
 	private WebElement addToCart;
 	
-	public void addToCartPage() {
+	public CartPage addToCartPage() {
 		addToCart.click();
+		return new CartPage(driver);
 	}
 	
-	
-	// Check if the price tallies out
-	@AndroidFindBy(id="com.androidsample.generalstore:id/productPrice")
-	private List<WebElement> price;
-	@AndroidFindBy(id="com.androidsample.generalstore:id/totalAmountLbl")
-	private WebElement displaySum;
-	
-	public void makeCalculations() {
-		int count = price.size();
-		double totalSum = 0;
-		for (int i = 0; i < count; i++) {
-			String amountString = price.get(i).getText();
-			Double fPrice = Double.parseDouble(amountString.substring(1));
-			totalSum = totalSum + fPrice;
-			System.out.println("total sum: " + totalSum);
-		}
-		String displaySumm = displaySum.getText();
-		Double displayFormattedSum =  getFormattedAmount(displaySumm);
-		System.out.println("system's total sum: " + displayFormattedSum);
-	}
-	
-	// Click terms and condition button
-	@AndroidFindBy(id="com.androidsample.generalstore:id/termsButton")
-	private WebElement termsBtn;
-	
-	
-	public void clickTermsBtn() {
-		LongPress(termsBtn);
-	}
-	
-	// Click cancel on terms and condition modal
-	@AndroidFindBy(id="android:id/button1")
-	private WebElement termsCancelBtn;
-	
-	
-	public void clickTermsCancelBtn() {
-		termsCancelBtn.click();
-	}
-	
-	// Click discount email checkbox
-	@AndroidFindBy(className="android.widget.CheckBox")
-	private WebElement discountEmailBtn;
-	
-	
-	public void discountEmailBtn() {
-		discountEmailBtn.click();
-	}
-	
-	// Click website link
-	@AndroidFindBy(id="com.androidsample.generalstore:id/btnProceed")
-	private WebElement Website;
-	
-	
-	public void website() {
-		Website.click();
-	}
-	
-	// Change to webview
-	
-	public void webview() throws InterruptedException {
-		driver.context("WEBVIEW_com.androidsample.generalstore");
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("q")));
-		driver.findElement(By.name("q")).sendKeys("Mangoes");
-		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
-		Thread.sleep(3000);
-		driver.pressKey(new KeyEvent(AndroidKey.BACK));
-		driver.context("NATIVE_APP");
-		Thread.sleep(2000);
-	}
 	
 }
