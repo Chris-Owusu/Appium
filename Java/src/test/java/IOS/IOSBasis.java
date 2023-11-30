@@ -4,7 +4,7 @@ public class IOSBasis {
 	
 	public void IOSBasisTest() {
 
-		// Various selectors -> classname, id, accessibility id, IOSClassChain, IOSpredicate
+		// Various selectors -> classname, id, accessibility id, iOSClassChain, iOSpredicateString
 		
 		// Scroll effect --> "mobile:scroll"
 		// LongPress --> "mobile:touchAndHold"
