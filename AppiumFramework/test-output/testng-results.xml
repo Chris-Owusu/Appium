@@ -1,25 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-30T11:09:49 GMT" name="Default suite" finished-at="2023-11-30T11:11:18 GMT" duration-ms="89157">
+  <suite started-at="2023-12-04T10:58:54 GMT" name="Suite" finished-at="2023-12-04T11:02:20 GMT" duration-ms="205985">
     <groups>
     </groups>
-    <test started-at="2023-11-30T11:09:49 GMT" name="Default test" finished-at="2023-11-30T11:11:18 GMT" duration-ms="89157">
+    <test started-at="2023-12-04T10:58:54 GMT" name="Base Test" finished-at="2023-12-04T10:58:54 GMT" duration-ms="11">
+    </test> <!-- Base Test -->
+    <test started-at="2023-12-04T10:58:54 GMT" name="Hybrid Test" finished-at="2023-12-04T11:02:20 GMT" duration-ms="205890">
       <class name="org.javaTut.HybridApp">
-        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:org.javaTut.HybridApp@47d9a273]" started-at="2023-11-30T11:09:49 GMT" name="ConfigureAppium" finished-at="2023-11-30T11:10:16 GMT" duration-ms="26810" status="PASS">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:org.javaTut.HybridApp@57cf54e1]" started-at="2023-12-04T10:58:54 GMT" name="ConfigureAppium" finished-at="2023-12-04T10:59:08 GMT" duration-ms="14330" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigureAppium -->
-        <test-method signature="checkBox()[pri:0, instance:org.javaTut.HybridApp@47d9a273]" started-at="2023-11-30T11:10:16 GMT" name="checkBox" finished-at="2023-11-30T11:11:17 GMT" duration-ms="61657" status="PASS">
+        <test-method signature="checkBox(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.javaTut.HybridApp@57cf54e1]" started-at="2023-12-04T10:59:08 GMT" name="checkBox" data-provider="getData" finished-at="2023-12-04T11:00:09 GMT" duration-ms="60946" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Marc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[male]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Aruba]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkBox -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.javaTut.HybridApp@47d9a273]" started-at="2023-11-30T11:11:17 GMT" name="tearDown" finished-at="2023-11-30T11:11:18 GMT" duration-ms="624" status="PASS">
+        <test-method signature="checkBox(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.javaTut.HybridApp@57cf54e1]" started-at="2023-12-04T11:00:09 GMT" name="checkBox" data-provider="getData" finished-at="2023-12-04T11:01:07 GMT" duration-ms="58056" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sarah]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[female]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Brazil]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkBox -->
+        <test-method signature="checkBox(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.javaTut.HybridApp@57cf54e1]" started-at="2023-12-04T11:01:07 GMT" name="checkBox" data-provider="getData" finished-at="2023-12-04T11:02:19 GMT" duration-ms="71696" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Joel]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[male]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Ghana]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkBox -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.javaTut.HybridApp@57cf54e1]" started-at="2023-12-04T11:02:19 GMT" name="tearDown" finished-at="2023-12-04T11:02:20 GMT" duration-ms="817" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- org.javaTut.HybridApp -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Hybrid Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -7,20 +7,21 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.javaTut.AppiumFramework.pageObjects.android.CartPage;
-import org.javaTut.AppiumFramework.pageObjects.android.FormPage;
 import org.javaTut.AppiumFramework.pageObjects.android.ProjectCatalog;
 import org.javaTut.AppiumFramework.pageObjects.android.Webview;
 
 public class HybridApp extends BaseTests {
 
-	@Test
-	public void checkBox() throws InterruptedException {
+	@Test(dataProvider = "getData")
+	public void checkBox(String name, String gender, String country) throws InterruptedException {
 		
-		formPage.setNameField("Marc");
-		formPage.gender("male");
-		formPage.chooseCountry("Aruba");
+		formPage.setNameField(name);
+		formPage.gender(gender);
+		formPage.chooseCountry(country);
 		ProjectCatalog projectCatalog = (ProjectCatalog) formPage.shopButton();
 		Thread.sleep(5000);
 		projectCatalog.chooseKicks();
@@ -48,5 +49,15 @@ public class HybridApp extends BaseTests {
 		}
 		Thread.sleep(3000);
 		webview.webview();
+	}
+	
+//	@BeforeMethod
+//	public void preSetup() {
+//		formPage.setActivity();
+//	}
+	
+	@DataProvider(name = "getData")
+	public Object[][] getData() {
+		return new Object[][] {{"Marc", "male", "Aruba"}, {"Sarah", "female", "Brazil"}, {"Joel", "male", "Ghana"}};
 	}
 }

@@ -1,10 +1,11 @@
-package org.javaTut.AppiumFramework.pageObjects.android;
+ package org.javaTut.AppiumFramework.pageObjects.android;
 
 import org.javaTut.AppiumFramework.utils.AndroidActions;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.Activity;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
@@ -19,6 +20,12 @@ public class FormPage extends AndroidActions {
 		this.driver = driver;
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
+	
+//	public void setActivity() {
+//	    Activity activity = new Activity("com.androidsample.genralstore", "com.androidsample.generalstore.MainActivity");
+//	    driver.startActivity(activity);
+//	}
+
 	
 	
 	// Type Name
@@ -63,34 +70,5 @@ public class FormPage extends AndroidActions {
 		shopBtn.click();
 		return new ProjectCatalog(driver);
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
 }
