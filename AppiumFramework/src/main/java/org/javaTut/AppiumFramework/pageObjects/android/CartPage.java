@@ -16,7 +16,6 @@ public class CartPage extends AndroidActions {
 
 	// Define a constructor
 	public CartPage(AndroidDriver driver) {
-		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
@@ -47,7 +46,7 @@ public class CartPage extends AndroidActions {
 		
 		
 		public void clickTermsBtn() {
-			LongPress(termsBtn);
+			LongPress(termsBtn, driver);
 		}
 		
 		// Click cancel on terms and condition modal

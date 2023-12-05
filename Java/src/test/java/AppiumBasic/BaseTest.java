@@ -38,8 +38,8 @@ public class BaseTest {
 		option.setDeviceName("Android Device");   // When running it on a real device
 		option.setChromedriverExecutable("C://Users//ChristopherOwusuAhen//Downloads//chromedriver.exe");
 //		option.setApp("C://eclipseWorkflow//Java//Java//src//test//java//resources//ApiDemos-debug.apk");
-		option.setApp("C://eclipseWorkflow//Java//Java//src//test//java//resources//General-Store.apk");
-//		option.setApp("C://eclipseWorkflow//Java//Java//src//test//java//resources//AccessBank.apk");
+//		option.setApp("C://eclipseWorkflow//Java//Java//src//test//java//resources//General-Store.apk");
+		option.setApp("C://eclipseWorkflow//Java//Java//src//test//java//resources//AccessBank.apk");
 //		option.setApp("C://eclipseWorkflow//Java//Java//src//test//java//resources//XLock.apk");
 		
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), option);

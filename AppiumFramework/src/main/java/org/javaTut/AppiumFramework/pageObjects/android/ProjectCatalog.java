@@ -23,11 +23,10 @@ AndroidDriver driver;
 	
 	// Define a constructor
 	public ProjectCatalog(AndroidDriver driver) {
-		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
-	
+//	
 	
 	// Choose Kicks
 	@AndroidFindBy(xpath="(//android.widget.TextView[@resource-id=\"com.androidsample.generalstore:id/productAddCart\"])[1]")
@@ -39,9 +38,9 @@ AndroidDriver driver;
 	
 	public void chooseKicks() {
 		airJordanRetro.click();
-		scrollToElement("Jordan Lift Off");
+		scrollToElement("Jordan Lift Off", driver);
 		jordanLiftOff.click();
-		scrollToElement("Nike SFB Jungle");
+		scrollToElement("Nike SFB Jungle", driver);
 		nikeSFBJungle.click();
 	}
 	

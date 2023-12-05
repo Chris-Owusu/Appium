@@ -6,6 +6,7 @@ import java.net.URL;
 import java.time.Duration;
 
 import org.javaTut.AppiumFramework.pageObjects.android.FormPage;
+import org.javaTut.AppiumFramework.utils.AndroidActions;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
@@ -19,11 +20,11 @@ import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 
-public class BaseTests {
+public class BaseTests extends AndroidActions {
+
 	public AndroidDriver driver;
 	public AppiumDriverLocalService service;
 	public FormPage formPage;
-	
 	
 	@BeforeClass
 	public void ConfigureAppium() throws MalformedURLException {

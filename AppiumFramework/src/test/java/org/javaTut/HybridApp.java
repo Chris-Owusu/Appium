@@ -1,6 +1,9 @@
 package org.javaTut;
 
+import java.io.IOException;
 import java.time.Duration;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Set;
 
 import org.openqa.selenium.By;
@@ -10,18 +13,22 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import io.appium.java_client.android.AndroidDriver;
+
 import org.javaTut.AppiumFramework.pageObjects.android.CartPage;
 import org.javaTut.AppiumFramework.pageObjects.android.ProjectCatalog;
 import org.javaTut.AppiumFramework.pageObjects.android.Webview;
+import org.javaTut.AppiumFramework.utils.AndroidActions;
 
 public class HybridApp extends BaseTests {
 
 	@Test(dataProvider = "getData")
-	public void checkBox(String name, String gender, String country) throws InterruptedException {
+	public void checkBox(HashMap<String, String> input) throws InterruptedException {
 		
-		formPage.setNameField(name);
-		formPage.gender(gender);
-		formPage.chooseCountry(country);
+		formPage.setNameField(input.get("name"));
+		formPage.gender(input.get("gender"));
+		formPage.chooseCountry(input.get("country"));
 		ProjectCatalog projectCatalog = (ProjectCatalog) formPage.shopButton();
 		Thread.sleep(5000);
 		projectCatalog.chooseKicks();
@@ -57,7 +64,9 @@ public class HybridApp extends BaseTests {
 //	}
 	
 	@DataProvider(name = "getData")
-	public Object[][] getData() {
-		return new Object[][] {{"Marc", "male", "Aruba"}, {"Sarah", "female", "Brazil"}, {"Joel", "male", "Ghana"}};
+	public Object[][] getData() throws IOException {
+		List<HashMap<String, String>> data = getJsonData(System.getProperty("user.dir")
+				+ "//src//test//java//testData//gstore.json");
+		return new Object[][] {{data.get(0)}, {data.get(1)}, {data.get(2)}};
 	}
 }

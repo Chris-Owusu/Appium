@@ -2,81 +2,51 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-04T10:58:54 GMT" name="Suite" finished-at="2023-12-04T11:02:20 GMT" duration-ms="205985">
+  <suite started-at="2023-12-05T14:01:49 GMT" name="Suite" finished-at="2023-12-05T14:05:12 GMT" duration-ms="203145">
     <groups>
     </groups>
-    <test started-at="2023-12-04T10:58:54 GMT" name="Base Test" finished-at="2023-12-04T10:58:54 GMT" duration-ms="11">
+    <test started-at="2023-12-05T14:01:49 GMT" name="Base Test" finished-at="2023-12-05T14:01:49 GMT" duration-ms="14">
     </test> <!-- Base Test -->
-    <test started-at="2023-12-04T10:58:54 GMT" name="Hybrid Test" finished-at="2023-12-04T11:02:20 GMT" duration-ms="205890">
+    <test started-at="2023-12-05T14:01:49 GMT" name="Hybrid Test" finished-at="2023-12-05T14:05:12 GMT" duration-ms="203053">
       <class name="org.javaTut.HybridApp">
-        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:org.javaTut.HybridApp@57cf54e1]" started-at="2023-12-04T10:58:54 GMT" name="ConfigureAppium" finished-at="2023-12-04T10:59:08 GMT" duration-ms="14330" status="PASS">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:org.javaTut.HybridApp@1151e434]" started-at="2023-12-05T14:01:49 GMT" name="ConfigureAppium" finished-at="2023-12-05T14:02:00 GMT" duration-ms="11056" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigureAppium -->
-        <test-method signature="checkBox(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.javaTut.HybridApp@57cf54e1]" started-at="2023-12-04T10:59:08 GMT" name="checkBox" data-provider="getData" finished-at="2023-12-04T11:00:09 GMT" duration-ms="60946" status="PASS">
+        <test-method signature="checkBox(java.util.HashMap)[pri:0, instance:org.javaTut.HybridApp@1151e434]" started-at="2023-12-05T14:02:01 GMT" name="checkBox" data-provider="getData" finished-at="2023-12-05T14:03:17 GMT" duration-ms="76266" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Marc]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[male]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Aruba]]>
+                <![CDATA[{name=Marc, country=Aruba, gender=male}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkBox -->
-        <test-method signature="checkBox(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.javaTut.HybridApp@57cf54e1]" started-at="2023-12-04T11:00:09 GMT" name="checkBox" data-provider="getData" finished-at="2023-12-04T11:01:07 GMT" duration-ms="58056" status="PASS">
+        <test-method signature="checkBox(java.util.HashMap)[pri:0, instance:org.javaTut.HybridApp@1151e434]" started-at="2023-12-05T14:03:17 GMT" name="checkBox" data-provider="getData" finished-at="2023-12-05T14:04:13 GMT" duration-ms="56174" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Sarah]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[female]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Brazil]]>
+                <![CDATA[{name=Sarah, country=Brazil, gender=female}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkBox -->
-        <test-method signature="checkBox(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.javaTut.HybridApp@57cf54e1]" started-at="2023-12-04T11:01:07 GMT" name="checkBox" data-provider="getData" finished-at="2023-12-04T11:02:19 GMT" duration-ms="71696" status="PASS">
+        <test-method signature="checkBox(java.util.HashMap)[pri:0, instance:org.javaTut.HybridApp@1151e434]" started-at="2023-12-05T14:04:13 GMT" name="checkBox" data-provider="getData" finished-at="2023-12-05T14:05:11 GMT" duration-ms="57920" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Joel]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[male]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Ghana]]>
+                <![CDATA[{name=Joel, country=Canada, gender=male}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkBox -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.javaTut.HybridApp@57cf54e1]" started-at="2023-12-04T11:02:19 GMT" name="tearDown" finished-at="2023-12-04T11:02:20 GMT" duration-ms="817" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.javaTut.HybridApp@1151e434]" started-at="2023-12-05T14:05:11 GMT" name="tearDown" finished-at="2023-12-05T14:05:12 GMT" duration-ms="1214" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -6,7 +6,7 @@
       <class name="org.javaTut.HybridApp">
         <methods>
           <include name="ConfigureAppium"/>
-          <include name="checkBox" invocation-numbers="0"/>
+          <include name="checkBox"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- org.javaTut.HybridApp -->

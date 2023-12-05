@@ -17,13 +17,10 @@ public class Webview extends AndroidActions {
 	AndroidDriver driver;
 
 	public Webview(AndroidDriver driver) {
-		super(driver);
-		// TODO Auto-generated constructor stub
 		this.driver = driver;
 	}
 		
 		// Change to webview
-		
 		public void webview() throws InterruptedException {
 			driver.context("WEBVIEW_com.androidsample.generalstore");
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));

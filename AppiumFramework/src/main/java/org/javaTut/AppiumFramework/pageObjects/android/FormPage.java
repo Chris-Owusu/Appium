@@ -10,13 +10,10 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 public class FormPage extends AndroidActions {
-	
-	
 	AndroidDriver driver;
 	
 	// Define a constructor
 	public FormPage(AndroidDriver driver) {
-		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
@@ -58,7 +55,7 @@ public class FormPage extends AndroidActions {
 	
 	public void chooseCountry(String countryName) {
 		country.click();
-		scrollToElement(countryName);
+		scrollToElement(countryName, driver);
 //		driver.findElement(By.xpath("//android.widget.TextView[@text'"+countryName+"']")).click();
 	}
 	
