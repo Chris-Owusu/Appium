@@ -2,18 +2,18 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-05T14:01:49 GMT" name="Suite" finished-at="2023-12-05T14:05:12 GMT" duration-ms="203145">
+  <suite started-at="2023-12-06T09:42:57 GMT" name="Suite" finished-at="2023-12-06T09:46:33 GMT" duration-ms="216612">
     <groups>
     </groups>
-    <test started-at="2023-12-05T14:01:49 GMT" name="Base Test" finished-at="2023-12-05T14:01:49 GMT" duration-ms="14">
+    <test started-at="2023-12-06T09:42:57 GMT" name="Base Test" finished-at="2023-12-06T09:42:57 GMT" duration-ms="20">
     </test> <!-- Base Test -->
-    <test started-at="2023-12-05T14:01:49 GMT" name="Hybrid Test" finished-at="2023-12-05T14:05:12 GMT" duration-ms="203053">
+    <test started-at="2023-12-06T09:42:57 GMT" name="Hybrid Test" finished-at="2023-12-06T09:46:33 GMT" duration-ms="216454">
       <class name="org.javaTut.HybridApp">
-        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:org.javaTut.HybridApp@1151e434]" started-at="2023-12-05T14:01:49 GMT" name="ConfigureAppium" finished-at="2023-12-05T14:02:00 GMT" duration-ms="11056" status="PASS">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:org.javaTut.HybridApp@1151e434]" started-at="2023-12-06T09:42:57 GMT" name="ConfigureAppium" finished-at="2023-12-06T09:43:08 GMT" duration-ms="10757" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigureAppium -->
-        <test-method signature="checkBox(java.util.HashMap)[pri:0, instance:org.javaTut.HybridApp@1151e434]" started-at="2023-12-05T14:02:01 GMT" name="checkBox" data-provider="getData" finished-at="2023-12-05T14:03:17 GMT" duration-ms="76266" status="PASS">
+        <test-method signature="checkBox(java.util.HashMap)[pri:0, instance:org.javaTut.HybridApp@1151e434]" started-at="2023-12-06T09:43:08 GMT" name="checkBox" data-provider="getData" finished-at="2023-12-06T09:44:34 GMT" duration-ms="85923" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -24,7 +24,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkBox -->
-        <test-method signature="checkBox(java.util.HashMap)[pri:0, instance:org.javaTut.HybridApp@1151e434]" started-at="2023-12-05T14:03:17 GMT" name="checkBox" data-provider="getData" finished-at="2023-12-05T14:04:13 GMT" duration-ms="56174" status="PASS">
+        <test-method signature="checkBox(java.util.HashMap)[pri:0, instance:org.javaTut.HybridApp@1151e434]" started-at="2023-12-06T09:44:34 GMT" name="checkBox" data-provider="getData" finished-at="2023-12-06T09:45:32 GMT" duration-ms="58325" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -35,7 +35,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkBox -->
-        <test-method signature="checkBox(java.util.HashMap)[pri:0, instance:org.javaTut.HybridApp@1151e434]" started-at="2023-12-05T14:04:13 GMT" name="checkBox" data-provider="getData" finished-at="2023-12-05T14:05:11 GMT" duration-ms="57920" status="PASS">
+        <test-method signature="checkBox(java.util.HashMap)[pri:0, instance:org.javaTut.HybridApp@1151e434]" started-at="2023-12-06T09:45:32 GMT" name="checkBox" data-provider="getData" finished-at="2023-12-06T09:46:32 GMT" duration-ms="60009" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -46,7 +46,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkBox -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.javaTut.HybridApp@1151e434]" started-at="2023-12-05T14:05:11 GMT" name="tearDown" finished-at="2023-12-05T14:05:12 GMT" duration-ms="1214" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.javaTut.HybridApp@1151e434]" started-at="2023-12-06T09:46:32 GMT" name="tearDown" finished-at="2023-12-06T09:46:33 GMT" duration-ms="1006" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
