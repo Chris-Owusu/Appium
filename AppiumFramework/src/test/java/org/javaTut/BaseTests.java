@@ -55,49 +55,6 @@ public class BaseTests extends AndroidActions {
 		formPage =  new FormPage(driver);
 	}
 	
-	// Long press on web element
-	public void LongPress(WebElement element) {
-		((JavascriptExecutor) driver).executeScript("mobile: longClickGesture", ImmutableMap.of(
-			    "elementId", ((RemoteWebElement) element).getId(), "duration", 2000
-			));
-	}
-	
-	// Scroll to the end
-	public void ScrollToEnd() {
-		boolean canScrollMore;
-		do {
-		canScrollMore = (Boolean) ((JavascriptExecutor) driver).executeScript("mobile: scrollGesture", ImmutableMap.of(
-		    "left", 100, "top", 100, "width", 200, "height", 200,
-		    "direction", "down",
-		    "percent", 3.0
-		));
-		}while(canScrollMore);
-	}
-	
-	// Swipe Action
-	public void Swipe(WebElement element, String direction) {
-		((JavascriptExecutor) driver).executeScript("mobile: swipeGesture", ImmutableMap.of(
-				"elementId", ((RemoteWebElement) element).getId(),
-			    "direction", direction,
-			    "percent", 0.75
-			));
-	}
-	
-	// Drag
-	public void Drag(WebElement element, int x, int y) {
-		((JavascriptExecutor) driver).executeScript("mobile: dragGesture", ImmutableMap.of(
-			    "elementId", ((RemoteWebElement) element).getId(),
-			    "endX", x,
-			    "endY", y
-			));
-	}
-	
-	// Get formatted amount --> remove $ from the price
-	public Double getFormattedAmount(String amount) {
-		Double fPrice = Double.parseDouble(amount.substring(1));
-		return fPrice;
-	}
-	
 	
 	@AfterClass
 	public void tearDown() {
