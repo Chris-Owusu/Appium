@@ -8,6 +8,7 @@ import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
 
@@ -49,5 +50,12 @@ public abstract class AndroidActions {
 		public Double getFormattedAmount(String amount) {
 			Double fPrice = Double.parseDouble(amount.substring(1));
 			return fPrice;
+		}
+		
+		public String getScreenshotPath(String testCaseName, AppiumDriver driver) throws IOException{
+			File source = driver.getScreenshotAs(OutputType.FILE);
+			String destinationFile = System.getProperty("user.dir") + "//reports" + testCaseName+".png";
+			FileUtils.copyFile(source, new File(destinationFile));
+			return destinationFile;
 		}
 }
