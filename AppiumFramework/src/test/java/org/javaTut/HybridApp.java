@@ -23,7 +23,7 @@ import org.javaTut.AppiumFramework.utils.AndroidActions;
 
 public class HybridApp extends BaseTests {
 
-	@Test(dataProvider = "getData")
+	@Test(dataProvider = "getData", groups= {"smoke"})
 	public void checkBox(HashMap<String, String> input) throws InterruptedException {
 		
 		formPage.setNameField(input.get("name"));

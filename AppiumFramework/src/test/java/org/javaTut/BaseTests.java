@@ -28,7 +28,7 @@ public class BaseTests extends AndroidActions {
 	public AppiumDriverLocalService service;
 	public FormPage formPage;
 	
-	@BeforeClass
+	@BeforeClass(alwaysRun=true)
 	public void ConfigureAppium() throws IOException {
 		
 		// Automatically start service.
@@ -56,7 +56,7 @@ public class BaseTests extends AndroidActions {
 	}
 	
 	
-	@AfterClass
+	@AfterClass(alwaysRun=true)
 	public void tearDown() {
 		driver.quit();
 		service.stop();

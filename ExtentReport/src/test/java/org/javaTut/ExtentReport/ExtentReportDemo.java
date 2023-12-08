@@ -38,7 +38,6 @@ public class ExtentReportDemo {
 		System.out.println(driver.getTitle());
 		
 		test.addScreenCaptureFromPath("Failure");
-		extent.flush();
 	}
 
 }

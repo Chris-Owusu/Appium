@@ -12,6 +12,7 @@
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
+	<!-- How to run test: mvn test -PRegression -->
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
@@ -23,8 +24,7 @@
     	<groupId>io.appium</groupId>
     	<artifactId>java-client</artifactId>
     	<version>9.0.0</version>
-	</dependency>
-
+	</dependency> 
 	<dependency>
     	<groupId>org.testng</groupId>
     	<artifactId>testng</artifactId>
@@ -69,6 +69,49 @@
 	</dependency>
 
   </dependencies>
+  
+  <profiles>
+	  <profile>
+		  <id>Regression</id>
+		  <build>
+			  <pluginManagement>
+				  <plugins>
+      				<plugin>
+      				  <groupId>org.apache.maven.plugins</groupId>
+      				  <artifactId>maven-surefire-plugin</artifactId>
+      				  <version>3.2.2</version>
+      				  <configuration>
+      				    <suiteXmlFiles>
+      				      <suiteXmlFile>testNGSuite/testng.xml</suiteXmlFile>
+      				    </suiteXmlFiles>
+      				  </configuration>
+      				</plugin>
+				</plugins>
+			  </pluginManagement>
+		  </build>
+	  </profile>
+	  
+	  
+	  <profile>
+		  <id>Smoke</id>
+		  <build>
+			  <pluginManagement>
+				  <plugins>
+      				<plugin>
+      				  <groupId>org.apache.maven.plugins</groupId>
+      				  <artifactId>maven-surefire-plugin</artifactId>
+      				  <version>3.2.2</version>
+      				  <configuration>
+      				    <suiteXmlFiles>
+      				      <suiteXmlFile>testNGSuite/testng_smoke.xml</suiteXmlFile>
+      				    </suiteXmlFiles>
+      				  </configuration>
+      				</plugin>
+				</plugins>
+			  </pluginManagement>
+		  </build>
+	  </profile>
+  </profiles>
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
