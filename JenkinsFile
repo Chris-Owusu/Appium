@@ -21,7 +21,7 @@ pipeline {
                     def serverParam = params.SERVER ?: env.SERVER
 
                     // Run Maven test command
-                    bat "mvn test -P${profileParam} -Dserver=${serverParam}"
+                    bat "mvn test -P${profileParam} -D${serverParam}"
                 }
             }
         }
