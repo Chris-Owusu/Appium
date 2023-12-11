@@ -30,15 +30,20 @@ public class BaseTests extends AndroidActions {
 	
 	@BeforeClass(alwaysRun=true)
 	public void ConfigureAppium() throws IOException {
-		
-		// Automatically start service.
-		service = new AppiumServiceBuilder().withAppiumJS(new File("C://Users//ChristopherOwusuAhen//AppData//Roaming//npm//node_modules//appium//build//lib//main.js"))
-					.withIPAddress("127.0.0.1").usingPort(4723).build();
-		service.start();
-		
 		Properties prop = new Properties();
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "//src//main//java//org//javaTut//AppiumFramework//resources//data.properties");
 		prop.load(fis);
+		
+		String ipAddress = System.getProperty("ipAddress") !=null ? System.getProperty("ipAddress") : prop.getProperty("ipAddress");
+		
+		// String ipAddress = prop.getProperty("ipAddress");
+		String port = prop.getProperty("port");
+		
+		// Automatically start service.
+		service = new AppiumServiceBuilder().withAppiumJS(new File("C://Users//ChristopherOwusuAhen//AppData//Roaming//npm//node_modules//appium//build//lib//main.js"))
+					.withIPAddress(ipAddress).usingPort(Integer.parseInt(port)).build();
+		service.start();
+		
 		
 		String phone = prop.getProperty("deviceName");
 		
