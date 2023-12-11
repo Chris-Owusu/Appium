@@ -1,0 +1,35 @@
+pipeline {
+    agent any
+    
+    environment {
+        PROFILE = 'Regression' // Set your default profile
+        SERVER = '127.0.0.1'   // Set your default server
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Run Tests') {
+            steps {
+                script {
+                    // Set the desired profile and server parameters
+                    def profileParam = params.PROFILE ?: env.PROFILE
+                    def serverParam = params.SERVER ?: env.SERVER
+
+                    // Run Maven test command
+                    bat "mvn test -P${profileParam} -D${serverParam}"
+                }
+            }
+        }
+    }
+    
+    // Define parameters for the pipeline
+    parameters {
+        string(name: 'PROFILE', defaultValue: '', description: 'Maven profile')
+        string(name: 'SERVER', defaultValue: '', description: 'Server parameter')
+    }
+}
