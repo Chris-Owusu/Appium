@@ -22,6 +22,7 @@ import io.appium.java_client.android.AndroidDriver;
 
 public abstract class AndroidActions {
 	
+	// Parse the json data to the script
 	public List<HashMap<String, String>> getJsonData(String jsonFIlePath) throws IOException {
 		String jsonContent = FileUtils.readFileToString(new File(jsonFIlePath),
 				StandardCharsets.UTF_8);

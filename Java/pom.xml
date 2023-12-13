@@ -44,6 +44,11 @@
     	<version>4.15.0</version>
 	</dependency>
 
+	<dependency>
+		<groupId>org.javaTut</groupId>
+		<artifactId>AppiumFramework</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</dependency>
   </dependencies>
 
   <build>

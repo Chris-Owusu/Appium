@@ -2,20 +2,27 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-05T09:11:02 GMT" name="Default suite" finished-at="2023-12-05T09:11:15 GMT" duration-ms="13610">
+  <suite started-at="2023-12-13T11:06:03 GMT" name="Default suite" finished-at="2023-12-13T11:06:47 GMT" duration-ms="44528">
     <groups>
     </groups>
-    <test started-at="2023-12-05T09:11:02 GMT" name="Default test" finished-at="2023-12-05T09:11:15 GMT" duration-ms="13610">
+    <test started-at="2023-12-13T11:06:03 GMT" name="Default test" finished-at="2023-12-13T11:06:47 GMT" duration-ms="44528">
       <class name="FingerPrint.Fingerprint">
-        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:FingerPrint.Fingerprint@1151e434]" started-at="2023-12-05T09:11:02 GMT" name="ConfigureAppium" finished-at="2023-12-05T09:11:12 GMT" duration-ms="10000" status="PASS">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:FingerPrint.Fingerprint@1c7696c6]" started-at="2023-12-13T11:06:03 GMT" name="ConfigureAppium" finished-at="2023-12-13T11:06:19 GMT" duration-ms="16779" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigureAppium -->
-        <test-method signature="fPrint()[pri:0, instance:FingerPrint.Fingerprint@1151e434]" started-at="2023-12-05T09:11:12 GMT" name="fPrint" finished-at="2023-12-05T09:11:14 GMT" duration-ms="2445" status="PASS">
+        <test-method signature="fPrint(java.util.HashMap)[pri:0, instance:FingerPrint.Fingerprint@1c7696c6]" started-at="2023-12-13T11:06:21 GMT" name="fPrint" data-provider="getData" finished-at="2023-12-13T11:06:46 GMT" duration-ms="25288" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=password, username=ChrisWolf}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fPrint -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:FingerPrint.Fingerprint@1151e434]" started-at="2023-12-05T09:11:14 GMT" name="tearDown" finished-at="2023-12-05T09:11:15 GMT" duration-ms="1099" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:FingerPrint.Fingerprint@1c7696c6]" started-at="2023-12-13T11:06:46 GMT" name="tearDown" finished-at="2023-12-13T11:06:47 GMT" duration-ms="1065" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
